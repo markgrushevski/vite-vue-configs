@@ -1,0 +1,15 @@
+{
+    "name": "vue-configs-ts",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc && vite build",
+        "preview": "vite preview",
+        "lint:prettier": "npx prettier --write **/*.{vue,ts,json,md,html} --ignore-path .gitignore",
+        "lint:stylelint": "npx stylelint --fix **/*.{vue,css}",
+        "lint:eslint": "npx eslint --fix **/*.{vue,ts} --ignore-path .gitignore",
+        "lint:all": "npm run lint:prettier && npm run lint:stylelint && npm run lint:eslint"
+    }
+}

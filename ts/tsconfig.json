@@ -1,0 +1,28 @@
+{
+    "include": ["src/**/*.{ts,vue}"],
+    "compilerOptions": {
+        "strict": true,
+        "module": "ESNext",
+        "target": "ESNext",
+        "baseUrl": ".",
+        "paths": {
+            "@": ["./src"],
+            "@app": ["./src/app"],
+            "@pages": ["./src/pages"],
+            "@widgets": ["./src/widgets"],
+            "@features": ["./src/features"],
+            "@entities": ["./src/entities"],
+            "@shared": ["./src/shared"]
+        },
+        "noEmit": true,
+        "skipLibCheck": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "verbatimModuleSyntax": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "bundler",
+        "types": ["vite/client"],
+        "lib": ["DOM", "DOM.Iterable", "ESNext"]
+    }
+}
