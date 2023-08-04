@@ -2,8 +2,8 @@
     "include": ["src/**/*.{js,vue}"],
     "compilerOptions": {
         "strict": true,
-        "module": "ESNext",
-        "target": "ESNext",
+        "module": "esnext",
+        "target": "esnext",
         "baseUrl": ".",
         "paths": {
             "@": ["./src"],
