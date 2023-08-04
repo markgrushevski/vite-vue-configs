@@ -6,13 +6,13 @@
         "target": "esnext",
         "baseUrl": ".",
         "paths": {
-            "@": ["./src"],
+            "@/*": ["./src/*"],
             "@app": ["./src/app"],
             "@pages": ["./src/pages"],
             "@widgets": ["./src/widgets"],
             "@features": ["./src/features"],
             "@entities": ["./src/entities"],
-            "@shared": ["./src/shared"]
+            "@shared/*": ["./src/shared/*"]
         },
         "allowJs": true,
         "checkJs": true
