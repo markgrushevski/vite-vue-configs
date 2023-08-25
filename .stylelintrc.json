@@ -1,5 +1,4 @@
 {
-    "ignoreFiles": ["node_modules/", "dist/", ".vscode/", ".idea/"],
     "extends": "stylelint-config-standard-vue",
     "rules": {
         "selector-class-pattern": "^([a-z][a-z0-9]*)(-[a-z0-9]+)*((__([a-z][a-z0-9]*)(-[a-z0-9]+)*)?((_)([a-z][a-z0-9]*)(-[a-z0-9]+)*)?)$"
