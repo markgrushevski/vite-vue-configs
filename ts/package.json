@@ -7,9 +7,9 @@
         "dev": "vite",
         "build": "vue-tsc && vite build",
         "preview": "vite preview",
-        "lint:prettier": "npx prettier --write **/*.{vue,ts,json,md,html}",
-        "lint:stylelint": "npx stylelint --fix **/*.{vue,css}",
-        "lint:eslint": "npx eslint --fix **/*.{vue,ts}",
+        "lint:prettier": "npx prettier --write .",
+        "lint:stylelint": "npx stylelint --fix .",
+        "lint:eslint": "npx eslint --fix .",
         "lint:all": "npm run lint:prettier && npm run lint:stylelint && npm run lint:eslint"
     }
 }

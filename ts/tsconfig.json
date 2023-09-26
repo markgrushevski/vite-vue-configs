@@ -1,10 +1,17 @@
 {
     "include": ["src/**/*.{ts,vue}"],
     "compilerOptions": {
+        "noEmit": true,
         "strict": true,
-        "module": "esnext",
-        "target": "esnext",
+        "skipLibCheck": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "verbatimModuleSyntax": true,
+        "allowImportingTsExtensions": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
         "baseUrl": ".",
+        "rootDir": ".",
         "paths": {
             "@/*": ["./src/*"],
             "@app": ["./src/app"],
@@ -14,15 +21,10 @@
             "@entities": ["./src/entities"],
             "@shared/*": ["./src/shared/*"]
         },
-        "noEmit": true,
-        "skipLibCheck": true,
-        "isolatedModules": true,
-        "esModuleInterop": true,
-        "verbatimModuleSyntax": true,
-        "allowSyntheticDefaultImports": true,
-        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        "target": "esnext",
         "moduleResolution": "bundler",
-        "types": ["vite/client"],
-        "lib": ["DOM", "DOM.Iterable", "ESNext"]
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "types": ["vite/client"]
     }
 }

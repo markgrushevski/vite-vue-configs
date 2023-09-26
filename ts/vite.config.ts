@@ -1,5 +1,4 @@
 import vue from '@vitejs/plugin-vue';
-import postcssNested from 'postcss-nested';
 import autoprefixer from 'autoprefixer';
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
@@ -12,7 +11,7 @@ export default defineConfig({
     preview: { cors: true, port: 7777, https: true },
     build: { sourcemap: true },
     esbuild: { sourcemap: 'external' },
-    css: { postcss: { plugins: [ postcssNested, autoprefixer ] }, devSourcemap: true },
+    css: { postcss: { plugins: [ autoprefixer ] }, devSourcemap: true },
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url)),
