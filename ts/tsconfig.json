@@ -15,10 +15,7 @@
         "paths": {
             "@/*": ["./src/*"],
             "@app": ["./src/app"],
-            "@pages": ["./src/pages"],
-            "@widgets": ["./src/widgets"],
-            "@features": ["./src/features"],
-            "@entities": ["./src/entities"],
+            "@components": ["./src/components"],
             "@shared/*": ["./src/shared/*"]
         },
         "module": "esnext",

@@ -8,7 +8,7 @@
     "arrowParens": "always",
     "bracketSpacing": true,
     "embeddedLanguageFormatting": "auto",
-    "endOfLine": "crlf",
+    "endOfLine": "auto",
     "htmlWhitespaceSensitivity": "css",
     "insertPragma": false,
     "printWidth": 120,
