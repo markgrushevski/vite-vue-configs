@@ -6,7 +6,7 @@
 ### Setup _«All In One»_
 
 ```sh
-git init && npm i vue pinia vue-router && npm i -D vite eslint prettier stylelint postcss-nested autoprefixer && npm i -D lint-staged @vitejs/plugin-vue vite-plugin-mkcert eslint-plugin-vue eslint-config-prettier stylelint-config-standard-vue postcss-html && npx husky-init
+git init && npm i vue pinia vue-router && npm i -D vite eslint prettier stylelint autoprefixer && npm i -D lint-staged @vitejs/plugin-vue eslint-plugin-vue eslint-config-prettier stylelint-config-standard-vue postcss-html && npx husky-init
 ```
 
 ### Setup _«By Steps»_
@@ -26,7 +26,7 @@ npm i vue pinia vue-router
 #### Step III
 
 ```sh
-npm i -D vite eslint prettier stylelint postcss-nested autoprefixer && npm i -D lint-staged @vitejs/plugin-vue vite-plugin-mkcert eslint-plugin-vue eslint-config-prettier stylelint-config-standard-vue postcss-html
+npm i -D vite eslint prettier stylelint autoprefixer && npm i -D lint-staged @vitejs/plugin-vue eslint-plugin-vue eslint-config-prettier stylelint-config-standard-vue postcss-html
 ```
 
 #### Step IV
@@ -43,7 +43,7 @@ npx husky-init
 ### Setup _«All In One»_
 
 ```sh
-git init && npm i vue pinia vue-router && npm i -D typescript vue-tsc vite eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin vue-eslint-parser prettier stylelint postcss-nested autoprefixer && npm i -D lint-staged @vitejs/plugin-vue vite-plugin-mkcert eslint-plugin-vue eslint-config-prettier stylelint-config-standard-vue postcss-html && npx husky-init
+git init && npm i vue pinia vue-router && npm i -D typescript vue-tsc vite eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin vue-eslint-parser prettier stylelint autoprefixer && npm i -D lint-staged @vitejs/plugin-vue eslint-plugin-vue eslint-config-prettier stylelint-config-standard-vue postcss-html && npx husky-init
 ```
 
 ### Setup _«By Steps»_
@@ -63,7 +63,7 @@ npm i vue pinia vue-router
 #### Step III
 
 ```sh
-npm i -D typescript vue-tsc vite eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin vue-eslint-parser prettier stylelint postcss-nested autoprefixer && npm i -D lint-staged @vitejs/plugin-vue vite-plugin-mkcert eslint-plugin-vue eslint-config-prettier stylelint-config-standard-vue postcss-html
+npm i -D typescript vue-tsc vite eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin vue-eslint-parser prettier stylelint autoprefixer && npm i -D lint-staged @vitejs/plugin-vue eslint-plugin-vue eslint-config-prettier stylelint-config-standard-vue postcss-html
 ```
 
 #### Step IV
