@@ -4,12 +4,13 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "prepare": "husky",
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",
-        "lint:prettier": "npx prettier --write .",
-        "lint:stylelint": "npx stylelint --fix .",
-        "lint:eslint": "npx eslint --fix .",
+        "lint:prettier": "npx prettier --write **/*.{vue,js,ts,css,json,md,html}",
+        "lint:stylelint": "npx stylelint --fix **/*.{vue,css}",
+        "lint:eslint": "npx eslint --fix **/*.{vue,js,ts}",
         "lint:all": "npm run lint:prettier && npm run lint:stylelint && npm run lint:eslint"
     }
 }

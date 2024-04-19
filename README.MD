@@ -1,75 +1,61 @@
-## My Setup for Vue 3 JS/TS projects
+## My Setup for Vue 3 JS/TS projects 🧋
 
-<details>
-<summary>JS Setup 🧰</summary>
+### _All In One_ 🧰
 
-### Setup _«All In One»_
-
-```sh
-git init && npm i vue pinia vue-router && npm i -D vite eslint prettier stylelint autoprefixer && npm i -D lint-staged @vitejs/plugin-vue eslint-plugin-vue eslint-config-prettier stylelint-config-standard-vue postcss-html && npx husky-init
-```
-
-### Setup _«By Steps»_
-
-#### Step I
+###### JS
 
 ```sh
-git init
+git init && npm i vue pinia vue-router && npm i -D vite @vitejs/plugin-vue && npm i -D autoprefixer && npm i -D eslint eslint-plugin-vue eslint-config-prettier prettier stylelint stylelint-config-standard-vue postcss-html && npm i -D husky lint-staged && npm run prepare
 ```
 
-#### Step II
+###### TS
 
 ```sh
-npm i vue pinia vue-router
+git init && npm i vue pinia vue-router && npm i -D vite @vitejs/plugin-vue && npm i -D autoprefixer && npm i -D eslint eslint-plugin-vue eslint-config-prettier prettier stylelint stylelint-config-standard-vue postcss-html && npm i -D husky lint-staged && npm run prepare && npm i -D vue-tsc typescript typescript-eslint
 ```
 
-#### Step III
+### _By Steps_ 🛠️
 
-```sh
-npm i -D vite eslint prettier stylelint autoprefixer && npm i -D lint-staged @vitejs/plugin-vue eslint-plugin-vue eslint-config-prettier stylelint-config-standard-vue postcss-html
-```
-
-#### Step IV
-
-```sh
-npx husky-init
-```
-
-</details>
-
-<details>
-<summary>TS Setup 🧰</summary>
-
-### Setup _«All In One»_
-
-```sh
-git init && npm i vue pinia vue-router && npm i -D typescript vue-tsc vite eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin vue-eslint-parser prettier stylelint autoprefixer && npm i -D lint-staged @vitejs/plugin-vue eslint-plugin-vue eslint-config-prettier stylelint-config-standard-vue postcss-html && npx husky-init
-```
-
-### Setup _«By Steps»_
-
-#### Step I
+#### I. Git
 
 ```sh
 git init
 ```
 
-#### Step II
+#### II. Dependencies
+
+###### Vue
 
 ```sh
 npm i vue pinia vue-router
 ```
 
-#### Step III
+###### Bundler
 
 ```sh
-npm i -D typescript vue-tsc vite eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin vue-eslint-parser prettier stylelint autoprefixer && npm i -D lint-staged @vitejs/plugin-vue eslint-plugin-vue eslint-config-prettier stylelint-config-standard-vue postcss-html
+npm i -D vite @vitejs/plugin-vue
 ```
 
-#### Step IV
+###### Code transformers
 
 ```sh
-npx husky-init
+npm i -D autoprefixer
 ```
 
-</details>
+###### Lint and format code
+
+```sh
+npm i -D eslint @eslint/js globals eslint-plugin-vue eslint-config-prettier prettier stylelint stylelint-config-standard-vue postcss-html
+```
+
+###### Git hooks
+
+```sh
+npm i -D husky lint-staged && npm run prepare
+```
+
+#### III. Typescript
+
+```sh
+npm i -D vue-tsc typescript typescript-eslint
+```

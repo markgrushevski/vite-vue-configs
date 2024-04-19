@@ -1,11 +1,16 @@
 {
     "extends": "stylelint-config-standard-vue",
     "rules": {
-        "selector-class-pattern": "^([a-z][a-z0-9]*)(-[a-z0-9]+)*((__([a-z][a-z0-9]*)(-[a-z0-9]+)*)?((_)([a-z][a-z0-9]*)(-[a-z0-9]+)*)?)$",
+        "selector-class-pattern": [
+            "^([a-z][a-z0-9]*)(-[a-z0-9]+)*((__([a-z][a-z0-9]*)(-[a-z0-9]+)*)?((_)([a-z][a-z0-9]*)(-[a-z0-9]+)*)?)$",
+            {
+                "message": "Expected BEM naming convention."
+            }
+        ],
         "color-hex-length": "long",
         "declaration-empty-line-before": null,
         "custom-property-empty-line-before": null,
-        "color-function-notation": ["modern", {"ignore": ["with-var-inside"]}],
+        "color-function-notation": ["modern", { "ignore": ["with-var-inside"] }],
         "no-empty-source": null
     }
 }
