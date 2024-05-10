@@ -1,5 +1,7 @@
 ## My Setup for Vue 3 JS/TS projects 🧋
 
+You just need to copy and paste files you want in your project
+
 ### _All In One_ 🧰
 
 ###### JS
