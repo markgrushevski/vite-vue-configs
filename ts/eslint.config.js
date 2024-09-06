@@ -6,11 +6,17 @@ import tsESLint from 'typescript-eslint';
 
 export default /** @type { import('eslint').Linter.FlatConfig[] } */ ([
     {
-        files: ['src/**/*.{ts,vue}'],
+        files: [ 'src/**/*.{ts,vue}' ],
         languageOptions: {
             globals: globals.browser,
             parserOptions: { ecmaVersion: 'latest', sourceType: 'module' }
-        }
+        },
+        ignores: [
+            '.idea/',
+            '.vscode/',
+            'dist/',
+            'node_modules/'
+        ]
     },
     pluginJs.configs.recommended,
     ...tsESLint.configs.recommended,

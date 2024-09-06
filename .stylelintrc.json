@@ -7,10 +7,9 @@
                 "message": "Expected BEM naming convention."
             }
         ],
+        "color-function-notation": ["modern", {"ignore": ["with-var-inside"]}],
         "color-hex-length": "long",
-        "declaration-empty-line-before": null,
         "custom-property-empty-line-before": null,
-        "color-function-notation": ["modern", { "ignore": ["with-var-inside"] }],
-        "no-empty-source": null
+        "declaration-empty-line-before": null
     }
 }
