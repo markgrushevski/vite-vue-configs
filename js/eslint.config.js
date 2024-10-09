@@ -1,23 +1,19 @@
-import pluginJs from '@eslint/js';
-import eslintConfigPrettier from 'eslint-config-prettier';
-import pluginVue from 'eslint-plugin-vue';
 import globals from 'globals';
+import pluginJs from '@eslint/js';
+import pluginVue from 'eslint-plugin-vue';
+import pluginPrettier from 'eslint-config-prettier';
 
-export default /** @type { import('eslint').Linter.FlatConfig[] } */ ([
+/** @type { import('pluginJs').Linter.FlatConfig[] } */
+export default ([
     {
         files: [ 'src/**/*.{js,vue}' ],
         languageOptions: {
             globals: globals.browser,
-            parserOptions: { ecmaVersion: 'latest', sourceType: 'module' }
+            parserOptions: { ecmaVersion: 'latest' }
         },
-        ignores: [
-            '.idea/',
-            '.vscode/',
-            'dist/',
-            'node_modules/'
-        ]
+        ignores: [ '.idea', '.vscode', 'dist', 'node_modules' ]
     },
     pluginJs.configs.recommended,
     ...pluginVue.configs['flat/recommended'],
-    eslintConfigPrettier
+    pluginPrettier
 ]);

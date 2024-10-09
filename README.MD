@@ -1,8 +1,9 @@
 ## My Setup for Vue 3 JS/TS projects 🧋
 
-You just need to copy and paste files you want in your project. 
+You just need to copy and paste files you want in your project.
 <br/>
 And don't forget about git
+
 ```shell
 git init
 ```
